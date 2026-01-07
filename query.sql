@@ -1,0 +1,23 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS movie_db
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_general_ci;
+
+-- Use database
+USE movie_db;
+
+CREATE TABLE IF NOT EXISTS movies (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    year VARCHAR(10) DEFAULT NULL,
+    type VARCHAR(50) DEFAULT NULL,
+    poster VARCHAR(255) DEFAULT NULL,
+    plot TEXT DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    rating VARCHAR(10) DEFAULT NULL,
+    genre VARCHAR(255) DEFAULT NULL,
+    actors TEXT DEFAULT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_general_ci;
