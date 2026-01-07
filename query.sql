@@ -1,9 +1,7 @@
--- Create database
 CREATE DATABASE IF NOT EXISTS movie_db
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
--- Use database
 USE movie_db;
 
 CREATE TABLE IF NOT EXISTS movies (
@@ -21,3 +19,4 @@ CREATE TABLE IF NOT EXISTS movies (
 ) ENGINE=InnoDB
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
+
